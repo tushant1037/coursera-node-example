@@ -1,13 +1,13 @@
 module.exports = (x, y, callback) => {
-  if (l <= 0 || b <= 0) {
+  if (x <= 0 || y <= 0) {
     setTimeout(
       () =>
         callback(
           new Error(
             "Rectangle dimensions should be greater than zero. l = " +
-              l +
+              x +
               ", and b = " +
-              b
+              y
           ),
           null
         ),
